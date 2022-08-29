@@ -46,3 +46,36 @@ body .container aside .top p {
   line-height: 24px;
   text-align: center;
 }
+body .container aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+  width: 290px;
+}
+body .container aside .sidebar .close {
+  align-items: flex-end;
+  margin: 19px 17px 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 17px;
+  height: 44px;
+  min-height: 44px;
+  width: 44px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+body .container aside .sidebar .close span {
+  height: 24px;
+  width: 24px;
+}
+body .container aside .sidebar .close:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: 1000ms all ease;
+}
+body .container aside .sidebar a {
+  display: flex;
+  font-style: normal;
+  height: 24px;
+}
