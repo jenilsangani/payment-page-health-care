@@ -78,4 +78,52 @@ body .container aside .sidebar a {
   display: flex;
   font-style: normal;
   height: 24px;
+  margin: 0 38px;
+  margin-bottom: 54px;
+  line-height: 21px;
+  align-items: center;
+  color: #302e2c;
+  gap: 20px;
+}
+body .container aside .sidebar a span {
+  height: 24px;
+  width: 24px;
+}
+body .container aside .sidebar a h3 {
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+body .container aside .sidebar .active {
+  background: #302e2c;
+  color: #ffffff;
+  margin: 0 17px;
+  border-radius: 100px;
+  height: 53px;
+  gap: 0;
+}
+body .container aside .sidebar .active span {
+  height: 24px;
+  width: 24px;
+  margin: 15px 20px 14px 20px;
+}
+body .container aside .sidebar .active h3 {
+  margin: 16px 0;
+  height: auto;
+}
+body .container aside .sidebar .active img {
+  margin-left: auto;
+  margin-right: 24px;
+}
+body .container aside .sidebar a:last-child {
+  margin-top: auto;
+}
+body .container .topNav {
+  top: 10;
+  position: relative;
+  height: 80px;
+  z-index: 4;
+  background: #0f90ba;
+  width: 100vw;
 }
