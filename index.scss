@@ -11,6 +11,38 @@
   list-style: none;
 }
 
-body{
-
+body {
+  height: 100vh;
+  user-select: none;
+  .container {
+    display: flex;
+    height: 100%;
+    aside {
+      width: 290px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 2px 0px 5px rgba($color: #000000, $alpha: 0.2);
+      z-index: 5;
+      background:#f9fafc;
+      .top{
+        width: 100%;
+        background: #f9fafc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 1.4rem;
+        border-bottom: 2px solid lightgray;
+        flex-direction: column;
+        padding: 23px;
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+        }
+      }
+    }
+  }
 }

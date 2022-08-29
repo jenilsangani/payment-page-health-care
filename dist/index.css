@@ -15,20 +15,34 @@ body {
   height: 100vh;
   user-select: none;
 }
-body .top {
+body .container {
   display: flex;
   height: 100%;
 }
-body .top aside {
-  justify-self: center;
-  flex-direction: column;
-}
-body .top aside .titleMenu {
-  justify-self: center;
-}
-body .top aside .titleMenu .innerText {
-  margin: 30px 513px 904px 683px;
+body .container aside {
+  width: 290px;
   display: flex;
-  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  background: #f9fafc;
+}
+body .container aside .top {
+  width: 100%;
+  background: #f9fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 1.4rem;
+  border-bottom: 2px solid lightgray;
+  flex-direction: column;
+  padding: 23px;
+}
+body .container aside .top p {
   font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
 }

@@ -13,15 +13,50 @@
 </head>
 
 <body>
-    <div class="top">
+    <div class="container">
         <aside>
-            <div class="titleMenu">
-                <div class="innerText">
-                    <span class="material-icons-sharp">people</span>
-                    <p class="left">Patient details</p>
-                    <span class="material-icons-sharp">verified_user</span>
-                    <p class="right">Insurance details</p>
+            <div class="top">
+                <div class="logo">
+                    <object data="./img/Vector.svg" type=""></object>
                 </div>
+                <p class="menuItemTitle">Vamsi Krishna</p>
+            </div>
+            <div class="sidebar">
+                <div class="close" id="close-btn" onclick="toggleMenu()"> <span
+                        class="material-icons-sharp">clear</span> </div>
+                <a href="#" class="menuItem">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3 class="menuItemTitle">Dashboard</h3>
+                </a>
+                <a href="#" class="menuItem">
+                    <span class="material-icons-sharp">message</span>
+                    <h3 class="menuItemTitle">Chat</h3>
+                </a>
+                <a href="#" class="menuItem">
+                    <span class="material-icons-sharp">event_available</span>
+                    <h3 class="menuItemTitle">Appointments</h3>
+                </a>
+                <a href="#" class="menuItem">
+                    <span class="material-icons-sharp">people</span>
+                    <h3 class="menuItemTitle">Patients</h3>
+                </a>
+                <a href="#" class="menuItem">
+                    <span class="material-icons-sharp">add_task</span>
+                    <h3 class="menuItemTitle">Vaccine Check-in</h3>
+                </a>
+                <a href="#" class="menuItem">
+                    <span class="material-icons-sharp">vaccines</span>
+                    <h3 class="menuItemTitle">Vaccinated Patients</h3>
+                </a>
+                <a href="#" class="active menuItem">
+                    <span class=" material-icons-sharp">settings </span>
+                    <h3 class="menuItemTitle">Settings</h3>
+                    <img src="./img/chevron-down.png" alt="">
+                </a>
+                <a href="#" class="logout menuItem">
+                    <span class=" material-icons-sharp">logout</span>
+                    <h3 class="menuItemTitle">Logout</h3>
+                </a>
             </div>
         </aside>
     </div>
