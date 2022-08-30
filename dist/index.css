@@ -127,3 +127,95 @@ body .container .topNav {
   background: #0f90ba;
   width: 100vw;
 }
+body .container main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+body .container main .bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+body .container main .bottom .left {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 112px;
+  background: #ffffff;
+  border-right: 2px solid rgba(151, 151, 149, 0.5);
+}
+body .container main .bottom .left .mainSection .title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #302e2c;
+  margin-bottom: 20px;
+}
+body .container main .bottom .left .mainSection .title h3 {
+  margin: 16px 0;
+  text-overflow: ellipsis;
+  height: auto;
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+body .container main .bottom .left .mainSection .title span {
+  height: 24px;
+  width: 24px;
+  margin: 0 20px 0 20px;
+}
+body .container main .bottom .left .mainSection .subTitle {
+  padding-left: 51px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  align-items: center;
+  color: #302e2c;
+  gap: 0;
+  display: flex;
+}
+body .container main .bottom .left .mainSection .active {
+  background: #0f90ba;
+  color: #ffffff;
+  height: 42px;
+  border-radius: 100px;
+  padding-left: 22px;
+  margin-left: 29px;
+  margin-right: 10px;
+  justify-self: center;
+  align-self: center;
+}
+body .container main .bottom .left .title2 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #302e2c;
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 47px;
+}
+body .container main .bottom .left .subTitle2 {
+  padding-left: 51px;
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  align-items: center;
+  color: #302e2c;
+  gap: 0px;
+  display: flex;
+}
+body .container main .bottom .left span {
+  height: 24px;
+  width: 24px;
+  margin: 0 20px 0 20px;
+}
+body .container main .bottom .left .arrow {
+  margin-left: 23px;
+  margin-top: 4px;
+}
