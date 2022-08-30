@@ -234,9 +234,9 @@ body {
             margin-left: 23px;
           }
         }
-        .Appointment {
+        .payment {
           flex-grow: 1;
-          .new {
+          .electronic {
             border-bottom: 1px solid rgba(#979795, 0.5);
             display: flex;
             flex-direction: column;
@@ -291,6 +291,33 @@ body {
                 font-size: 16px;
                 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
                 transition: all 374ms ease;
+              }
+            }
+          }
+          .method {
+            position: relative;
+            p {
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 26px;
+              color: #302e2c;
+              text-align: center;
+              margin-top: 49px;
+            }
+            .icon:last-child {
+              position: absolute;
+              top: 0;
+              right: 0;
+              margin-right: 33px;
+              display: flex;
+              color: #46d362;
+            }
+          }
+          .detail{
+            .heading{
+              position: relative;
+              p{
+                position: absolute;
               }
             }
           }

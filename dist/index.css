@@ -224,10 +224,10 @@ body .container main .bottom .left .arrow {
   margin-top: 4px;
   margin-left: 23px;
 }
-body .container main .bottom .Appointment {
+body .container main .bottom .payment {
   flex-grow: 1;
 }
-body .container main .bottom .Appointment .new {
+body .container main .bottom .payment .electronic {
   border-bottom: 1px solid rgba(151, 151, 149, 0.5);
   display: flex;
   flex-direction: column;
@@ -235,13 +235,13 @@ body .container main .bottom .Appointment .new {
   padding: 65px 210px;
   gap: 65px;
 }
-body .container main .bottom .Appointment .new p {
+body .container main .bottom .payment .electronic p {
   font-size: 28px;
   font-weight: 600;
   line-height: 34px;
   align-items: center;
 }
-body .container main .bottom .Appointment .new p:nth-child(2) {
+body .container main .bottom .payment .electronic p:nth-child(2) {
   font-style: normal;
   font-weight: 500;
   align-self: flex-start;
@@ -252,21 +252,21 @@ body .container main .bottom .Appointment .new p:nth-child(2) {
   align-items: center;
   color: #302e2c;
 }
-body .container main .bottom .Appointment .new .form {
+body .container main .bottom .payment .electronic .form {
   display: flex;
   width: 100%;
   align-items: center;
 }
-body .container main .bottom .Appointment .new .form label {
+body .container main .bottom .payment .electronic .form label {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
 }
-body .container main .bottom .Appointment .new .form sb50 {
+body .container main .bottom .payment .electronic .form sb50 {
   width: 50px;
 }
-body .container main .bottom .Appointment .new .form input {
+body .container main .bottom .payment .electronic .form input {
   height: 50px;
   border-radius: 25px;
   flex-grow: 4;
@@ -276,4 +276,29 @@ body .container main .bottom .Appointment .new .form input {
   font-size: 16px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
   transition: all 374ms ease;
+}
+body .container main .bottom .payment .method {
+  position: relative;
+}
+body .container main .bottom .payment .method p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: #302e2c;
+  text-align: center;
+  margin-top: 49px;
+}
+body .container main .bottom .payment .method .icon:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 33px;
+  display: flex;
+  color: #46d362;
+}
+body .container main .bottom .payment .detail .heading {
+  position: relative;
+}
+body .container main .bottom .payment .detail .heading p {
+  position: absolute;
 }
