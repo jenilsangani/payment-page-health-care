@@ -18,6 +18,8 @@ body {
 body .container {
   display: flex;
   height: 100%;
+  justify-items: stretch;
+  justify-content: stretch;
 }
 body .container aside {
   width: 290px;
@@ -120,8 +122,8 @@ body .container aside .sidebar a:last-child {
   margin-top: auto;
 }
 body .container .topNav {
-  top: 10;
-  position: relative;
+  position: fixed;
+  flex-direction: column;
   height: 80px;
   z-index: 4;
   background: #0f90ba;
@@ -131,6 +133,10 @@ body .container main {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  height: 100%;
+}
+body .container main .topNavPlaceHolder {
+  height: 80px;
 }
 body .container main .bottom {
   display: flex;
@@ -140,82 +146,134 @@ body .container main .bottom {
 body .container main .bottom .left {
   width: 290px;
   display: flex;
-  flex-direction: column;
   padding-top: 112px;
-  background: #ffffff;
+  flex-direction: column;
   border-right: 2px solid rgba(151, 151, 149, 0.5);
+  background: #ffffff;
 }
 body .container main .bottom .left .mainSection .title {
   display: flex;
   align-items: center;
-  font-weight: 600;
   color: #302e2c;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 body .container main .bottom .left .mainSection .title h3 {
   margin: 16px 0;
-  text-overflow: ellipsis;
   height: auto;
+  text-overflow: ellipsis;
   font-size: 20px;
-  font-weight: 500;
   white-space: nowrap;
+  font-weight: 500;
 }
 body .container main .bottom .left .mainSection .title span {
-  height: 24px;
   width: 24px;
+  height: 24px;
   margin: 0 20px 0 20px;
 }
 body .container main .bottom .left .mainSection .subTitle {
   padding-left: 51px;
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  margin-bottom: 20px;
   line-height: 27px;
-  align-items: center;
   color: #302e2c;
+  align-items: center;
   gap: 0;
   display: flex;
 }
 body .container main .bottom .left .mainSection .active {
   background: #0f90ba;
-  color: #ffffff;
   height: 42px;
+  color: #ffffff;
   border-radius: 100px;
-  padding-left: 22px;
   margin-left: 29px;
+  padding-left: 22px;
   margin-right: 10px;
-  justify-self: center;
   align-self: center;
+  justify-self: center;
 }
 body .container main .bottom .left .title2 {
-  display: flex;
   align-items: center;
-  font-weight: 600;
+  display: flex;
   color: #302e2c;
-  margin-bottom: 20px;
+  font-weight: 600;
   margin-bottom: 30px;
   margin-top: 47px;
+  margin-bottom: 20px;
 }
 body .container main .bottom .left .subTitle2 {
-  padding-left: 51px;
   margin-bottom: 20px;
+  padding-left: 51px;
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   font-size: 18px;
   line-height: 27px;
-  align-items: center;
   color: #302e2c;
-  gap: 0px;
+  align-items: center;
   display: flex;
 }
 body .container main .bottom .left span {
   height: 24px;
-  width: 24px;
   margin: 0 20px 0 20px;
+  width: 24px;
 }
 body .container main .bottom .left .arrow {
-  margin-left: 23px;
   margin-top: 4px;
+  margin-left: 23px;
+}
+body .container main .bottom .Appointment {
+  flex-grow: 1;
+}
+body .container main .bottom .Appointment .new {
+  border-bottom: 1px solid rgba(151, 151, 149, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 210px;
+  gap: 65px;
+}
+body .container main .bottom .Appointment .new p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  align-items: center;
+}
+body .container main .bottom .Appointment .new p:nth-child(2) {
+  font-style: normal;
+  font-weight: 500;
+  align-self: flex-start;
+  font-size: 24px;
+  line-height: 20px;
+  /* identical to box height, or 83% */
+  display: flex;
+  align-items: center;
+  color: #302e2c;
+}
+body .container main .bottom .Appointment .new .form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+body .container main .bottom .Appointment .new .form label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+body .container main .bottom .Appointment .new .form sb50 {
+  width: 50px;
+}
+body .container main .bottom .Appointment .new .form input {
+  height: 50px;
+  border-radius: 25px;
+  flex-grow: 4;
+  padding: 0 20px;
+  line-height: 19.09px;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transition: all 374ms ease;
 }
