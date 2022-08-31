@@ -37,7 +37,11 @@ body {
         margin-top: 1.4rem;
         border-bottom: 2px solid lightgray;
         flex-direction: column;
-        padding: 23px;
+        padding: 31.29px 23px;
+        gap: 4.29px;
+        .logo {
+          width: 80px;
+        }
         p {
           font-size: 20px;
           font-weight: 500;
@@ -241,9 +245,8 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 65px 210px;
+            padding: 35px 275px 70px 210px;
             // border: 2px solid;
-            gap: 65px;
             p {
               font-size: 28px;
               font-weight: 600;
@@ -256,6 +259,8 @@ body {
               align-self: flex-start;
               font-size: 24px;
               line-height: 20px;
+              margin-top: 101px;
+              margin-bottom: 32px;
               /* identical to box height, or 83% */
 
               display: flex;
@@ -263,34 +268,40 @@ body {
 
               color: #302e2c;
             }
-            .form {
+            .filds {
               display: flex;
+              flex-direction: column;
+              gap: 20px;
               width: 100%;
-              align-items: center;
-              // gap: 69px;
-              // flex-direction: column;
-              label {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 20px;
-                // flex-grow: 1;
-                // border: 2px solid;
+              .form {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                // gap: 69px;
                 // flex-direction: column;
-              }
-              sb50 {
-                width: 50px;
-              }
-              input {
-                height: 50px;
-                border-radius: 25px;
-                flex-grow: 4;
-                padding: 0 20px;
-                line-height: 19.09px;
-                font-weight: 500;
-                font-size: 16px;
-                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-                transition: all 374ms ease;
+                label {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 20px;
+                  // flex-grow: 1;
+                  // border: 2px solid;
+                  // flex-direction: column;
+                }
+                sb50 {
+                  width: 50px;
+                }
+                input {
+                  height: 50px;
+                  border-radius: 25px;
+                  flex-grow: 4;
+                  padding: 0 20px;
+                  line-height: 19.09px;
+                  font-weight: 500;
+                  font-size: 16px;
+                  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+                  transition: all 374ms ease;
+                }
               }
             }
           }
@@ -313,11 +324,50 @@ body {
               color: #46d362;
             }
           }
-          .detail{
-            .heading{
-              position: relative;
-              p{
-                position: absolute;
+          .table {
+            margin-top: 21px;
+            display: flex;
+            // border: 2px solid;
+            table {
+              width: 100%;
+              margin-left: 21px;
+              margin-right: 28px;
+              border-collapse: collapse;
+              box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+              // border: 2px solid;
+              tr:nth-child(1) {
+                background: #0f90ba;
+              }
+              tr {
+                display: flex;
+                align-items: center;
+                height: 65px;
+
+                th:nth-child(1),
+                td:nth-child(1) {
+                  padding-left: 121px;
+                  max-width: 564px;
+                  width: 564px;
+                  min-width: 564px;
+                  // flex-grow: 1;
+                }
+                th:nth-child(2),
+                td:nth-child(2) {
+                  flex-grow: 2;
+                  width: 100%;
+                  // padding-left: 121px;
+                  // max-width: 419px;
+                }
+                th {
+                  // border: 2px solid;
+                  color: #ffffff;
+                  // border: 2px solid #0F90BA;
+                  text-align: left;
+                  // justify-conte: center;
+                  // // padding-right: 353px;
+                }
+                td {
+                }
               }
             }
           }

@@ -40,7 +40,11 @@ body .container aside .top {
   margin-top: 1.4rem;
   border-bottom: 2px solid lightgray;
   flex-direction: column;
-  padding: 23px;
+  padding: 31.29px 23px;
+  gap: 4.29px;
+}
+body .container aside .top .logo {
+  width: 80px;
 }
 body .container aside .top p {
   font-size: 20px;
@@ -232,8 +236,7 @@ body .container main .bottom .payment .electronic {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 65px 210px;
-  gap: 65px;
+  padding: 35px 275px 70px 210px;
 }
 body .container main .bottom .payment .electronic p {
   font-size: 28px;
@@ -247,26 +250,34 @@ body .container main .bottom .payment .electronic p:nth-child(2) {
   align-self: flex-start;
   font-size: 24px;
   line-height: 20px;
+  margin-top: 101px;
+  margin-bottom: 32px;
   /* identical to box height, or 83% */
   display: flex;
   align-items: center;
   color: #302e2c;
 }
-body .container main .bottom .payment .electronic .form {
+body .container main .bottom .payment .electronic .filds {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+body .container main .bottom .payment .electronic .filds .form {
   display: flex;
   width: 100%;
   align-items: center;
 }
-body .container main .bottom .payment .electronic .form label {
+body .container main .bottom .payment .electronic .filds .form label {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
 }
-body .container main .bottom .payment .electronic .form sb50 {
+body .container main .bottom .payment .electronic .filds .form sb50 {
   width: 50px;
 }
-body .container main .bottom .payment .electronic .form input {
+body .container main .bottom .payment .electronic .filds .form input {
   height: 50px;
   border-radius: 25px;
   flex-grow: 4;
@@ -296,9 +307,38 @@ body .container main .bottom .payment .method .icon:last-child {
   display: flex;
   color: #46d362;
 }
-body .container main .bottom .payment .detail .heading {
-  position: relative;
+body .container main .bottom .payment .table {
+  margin-top: 21px;
+  display: flex;
 }
-body .container main .bottom .payment .detail .heading p {
-  position: absolute;
+body .container main .bottom .payment .table table {
+  width: 100%;
+  margin-left: 21px;
+  margin-right: 28px;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+body .container main .bottom .payment .table table tr:nth-child(1) {
+  background: #0f90ba;
+}
+body .container main .bottom .payment .table table tr {
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+body .container main .bottom .payment .table table tr th:nth-child(1),
+body .container main .bottom .payment .table table tr td:nth-child(1) {
+  padding-left: 121px;
+  max-width: 564px;
+  width: 564px;
+  min-width: 564px;
+}
+body .container main .bottom .payment .table table tr th:nth-child(2),
+body .container main .bottom .payment .table table tr td:nth-child(2) {
+  flex-grow: 2;
+  width: 100%;
+}
+body .container main .bottom .payment .table table tr th {
+  color: #ffffff;
+  text-align: left;
 }
