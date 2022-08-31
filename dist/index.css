@@ -305,6 +305,9 @@ body .container main .bottom .payment .method .icon:last-child {
   margin-right: 33px;
   display: flex;
   color: #46d362;
+  box-shadow: 0px 0px 3.27607px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  padding: 5px;
 }
 body .container main .bottom .payment .table {
   margin-top: 21px;
