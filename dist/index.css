@@ -252,7 +252,6 @@ body .container main .bottom .payment .electronic p:nth-child(2) {
   line-height: 20px;
   margin-top: 101px;
   margin-bottom: 32px;
-  /* identical to box height, or 83% */
   display: flex;
   align-items: center;
   color: #302e2c;
@@ -340,5 +339,10 @@ body .container main .bottom .payment .table table tr td:nth-child(2) {
 }
 body .container main .bottom .payment .table table tr th {
   color: #ffffff;
+  font-size: 20px;
   text-align: left;
+}
+body .container main .bottom .payment .table table tr td {
+  color: #96a9ba;
+  font-size: 16px;
 }
