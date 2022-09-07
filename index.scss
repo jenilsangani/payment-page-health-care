@@ -42,12 +42,6 @@ body {
         .logo {
           width: 80px;
         }
-        p {
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 24px;
-          text-align: center;
-        }
       }
       .sidebar {
         display: flex;
@@ -70,6 +64,7 @@ body {
           span {
             height: 24px;
             width: 24px;
+            // border: 2px solid;
           }
         }
         .close:hover {
@@ -132,13 +127,13 @@ body {
       width: 100vw;
     }
     main {
-      .topNavPlaceHolder {
-        height: 80px;
-      }
       display: flex;
       flex-grow: 1;
       flex-direction: column;
       height: 100%;
+      .topNavPlaceHolder {
+        height: 80px;
+      }
       .bottom {
         display: flex;
         flex-grow: 1;

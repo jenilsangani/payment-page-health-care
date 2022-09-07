@@ -46,12 +46,6 @@ body .container aside .top {
 body .container aside .top .logo {
   width: 80px;
 }
-body .container aside .top p {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-}
 body .container aside .sidebar {
   display: flex;
   flex-direction: column;
