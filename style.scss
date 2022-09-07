@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   list-style: none;
+  transition: all 374ms ease;
 }
 
 body {
@@ -17,8 +18,6 @@ body {
   .container {
     display: flex;
     height: 100%;
-    justify-items: stretch;
-    justify-content: stretch;
     aside {
       width: 290px;
       display: flex;
@@ -261,7 +260,7 @@ body {
                   font-weight: 500;
                   font-size: 18px;
                   line-height: 20px;
-                  color: #0F90BA;
+                  color: #0f90ba;
                 }
                 sb50 {
                   width: 50px;
