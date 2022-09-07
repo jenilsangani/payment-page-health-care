@@ -13,7 +13,6 @@ function toggleMenu() {
     menuItems.forEach(function (menuItem) {
       menuItem.style.display = "none";
     });
-    // sidebar.style.width = "auto";
     sidebar.style.width = "100px";
     downArrow.style.display = "none";
     clz.style.align_self = "center";
